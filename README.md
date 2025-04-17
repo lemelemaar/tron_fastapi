@@ -6,7 +6,7 @@
 
 - **FastAPI** — API-фреймворк
 - **SQLAlchemy** — ORM для работы с базой данных
-- **SQLite** — СУБД (по умолчанию)
+- **SQLite** — СУБД
 - **Tronpy** — библиотека для взаимодействия с Tron
 - **Pytest** — тестирование
 
@@ -27,16 +27,16 @@
 git clone https://github.com/lemelemaar/tron_fastapi.git
 cd tron_fastapi
 ```
-2. Установи зависимости:
+### 2. Установи зависимости:
 ```bash
 pip install -r requirements.txt
 ```
-3. Добавь .env файл:
+### 3. Добавь .env файл:
 ```bash
 TRON_API_KEY=your_api_key_from_trongrid
 DATABASE_URL=sqlite:///./wallets.db
 ```
-4. Запусти сервер:
+### 4. Запусти сервер:
 ```bash
 uvicorn app.main:app --reload
 ```
